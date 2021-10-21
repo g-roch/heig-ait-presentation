@@ -20,7 +20,7 @@ Bacula est open source.
 
 Yes : 
 
-![image-20211020150457110](/home/cassandre/.config/Typora/typora-user-images/image-20211020150457110.png)
+![](img/bacula_cross-platform.png)
 
 Src : https://www.bacula.org/what-is-bacula/supported-operating-systems/
 
