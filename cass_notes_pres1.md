@@ -72,22 +72,45 @@ Director / Console / File / Storage / Monitor
 
 | Avantages                                       | Inconvénients                                        |
 | ----------------------------------------------- | ---------------------------------------------------- |
-| Cross-platform (largest app support)            | Prise en main complexe                               |
+| Cross-platform                                  | Prise en main complexe                               |
 | Automatisation & scheduling                     | Pas de scan de virus                                 |
 | Toujours maintenu (dernière update : juin 2021) | Courbe d'apprentissage plutôt raide (configurations) |
 | Détection d'erreurs                             |                                                      |
 | Cloud & offsite backup                          |                                                      |
 | Efficient deduplication (speeds up the backup)  |                                                      |
 | Virtual environment support                     |                                                      |
-|                                                 |                                                      |
-|                                                 |                                                      |
-|                                                 |                                                      |
-|                                                 |                                                      |
-|                                                 |                                                      |
-|                                                 |                                                      |
-|                                                 |                                                      |
+| Large documentation & en plusieurs langues      |                                                      |
 
 > Src : https://www.toolbox.com/tech/enterprise-software/articles/amanda-vs-bacula-backup-software/
->
-> 
 
+```
+PROS: 
+
+Cloud and offsite backup
+
+Bacula’s cloud backup works on the initial completion of local data and then transferring it to the cloud cache. It also offers data replication (offsite backup) to a geographically separated server via direct access or WAN.
+
+Efficient deduplication
+
+Deduplication engine enables a lesser duration of backups and reduction of storage space. Bacula cuts, stores, and indexes the file chunks on its Deduplication engine. It also uses compression for reducing the file size and speeding up the process.
+
+Largest application support
+
+Bacula consists of one of the largest databases for application support and includes all major platforms from Linux, Mac, Windows, AIX, Unix, Solaris. Application support consists of MS Exchange, MS SQL, My SQL, PostgreSQL, SAP HANA, Oracle, and SQLite.
+
+Virtual environment support
+
+Bacula positions itself as one of the few backup software providing support for almost all virtual environments. It uses XEN server API for accessing and backing up virtual machines and provides integration for VMware, MS Hyper-V, KVM, XEN, and Proxmox.
+__________________________________________________________________________________________
+CONS: 
+
+Complex interface
+
+The interface uses configuration files and text-based consoles and doesn’t have a GUI. This could make it difficult for sysadmins because bweb is an optional feature.
+
+Cluttered configuration
+
+The documentation can be intimidating when starting out because it’s not structured correctly. It could be challenging to find because of a steep learning curve.
+```
+
+-> Parler de l'optimisation du réseau (déduplication) + charge CPU engendrée
