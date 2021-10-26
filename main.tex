@@ -1,12 +1,13 @@
-\documentclass{beamer}
+\documentclass[aspectratio=169]{beamer}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage[french]{babel}
 \usepackage{hyperref}
 
+\newcommand{\TODO}{TODO:}
 
-\title{AIT --- Présentation}
+\title{Bacula\\~\\AIT --- Présentation}
 \author{Cassandre Wojciechowski \\ Gwendoline Dössegger \\ Noémie Plancherel \\ Gaby Roch}
 \hypersetup{pdfauthor={C. Wojciechowski, G. Dössegger, N. Plancherel, G. Roch}}
 
@@ -17,5 +18,112 @@
 \begin{frame}
   \titlepage
 \end{frame}
+
+\begin{frame}{Bacula -- Présentation général}
+ \begin{itemize}
+  \item Logiciel de sauvegarde multi-platform créé en 2000 par Kern Sibbald
+  \item Première version 2002
+  \item Dernière version 11.0.5, juin 2021
+  \item Open source
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Architecture}
+ \begin{itemize}
+  \item \TODO chiffré ??
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Demonstration}
+ \begin{itemize}
+  \item \TODO Temps de restauration de 1 fichier d'il y a 1 sem.
+  \item 
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Coût}
+\begin{center}
+
+ \begin{tabular}{|l|ccccc|}
+    \hline
+    & Standard & Bronze & Silver & Gold & Platinum \\
+    \hline
+    \hline
+    Nombre de clients & < 50 & < 200 & < 500 & < 2000 & < 5000 \\
+    \hline
+    Nombre de contacts & 1 & 2 & 3 & 5 & 5 \\
+    \hline
+    Assistance & Web & Web & Web et tél.& Web et tél. & Web et tél. \\
+    \hline
+    Nombre d'OS & 4 & toutes & toutes & toutes & toutes \\
+    \hline
+    Temps de réponse & 1j -- 4j & 6h -- 4j & 4h -- 2j & 1h -- 2j & 1h -- 2j \\
+    du support &  \\
+    \hline
+    Formation & 0 & 0 & 0 & 0 & 1/an \\
+    \hline
+ \end{tabular}
+\end{center}
+
+\TODO
+2 version: - Community open source
+
+Dès 500 \$ par mois sur devis pour la version Entreprise
+\end{frame}
+
+
+\begin{frame}{Comparaison}
+ \begin{itemize}
+  \item 
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Avantage / incovéniant}
+ \TODO optimisation backup réseau + CPU
+    \begin{center}
+     \begin{tabular}{|l|l|}
+     \hline
+      \textbf{Avantages} & \textbf{Inconvénients} \\
+     \hline
+     \hline
+        Cross-platform & Prise en main complexe \\
+     \hline
+      Automatisation \& scheduling & Pas de scan de virus\\
+     \hline
+     Toujours maintenu  & Courbe d'apprentissage plutôt raide \\
+     (dernière update: juin 2021) & (configurations) \\
+     \hline
+     Détection d'erreurs & \\
+     \hline
+     Cloud \& backup hors site & \\
+     \hline
+     Deduplication efficiante & \\
+     (accélere le backup) & \\
+     \hline
+     Support d'environment virtuel & \\
+     \hline
+     Documentation multi-langue & \\
+     \hline
+     \end{tabular}
+
+    \end{center}
+
+\end{frame}
+
+\begin{frame}{Discussion stratégique}
+ \begin{itemize}
+  \item \TODO Quel médium de backup supporter ?
+  \item \TODO RPO ?
+  \item \TODO Backup full automatique
+  \item \TODO Support des devices déconnecter
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Question ?}
+ \begin{itemize}
+  \item 
+ \end{itemize}
+\end{frame}
+
 
 \end{document}
