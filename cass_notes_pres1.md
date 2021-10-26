@@ -34,7 +34,7 @@ Tape and disk + ...
 
 **Can it do fully automated backups without user intervention?**
 
-Oui (?)
+Oui, il est possible de planifier des backups à l'avance et ils se lancent automatiquement au moment prévu. 
 
 **Are mobile devices supported that are connected only sporadically?**
 
@@ -48,7 +48,9 @@ TLS -> PSK = pwd set in the daemons
 
 **What's the RPO?**
 
+> Sauvegardes ultra régulières type toutes les 5 mn ou sauvegardes toutes les semaines ?
 
+Bacula est très flexible et les sauvegardes peuvent être lancées comme l'admin le prévoit -> RPO variable. 
 
 **How easy is it to restore a single file that was accidentally overwritten two weeks ago?**
 
@@ -63,3 +65,29 @@ Normalement, cela doit être très simple car Bacula ne va jamais réécrire sur
 
 
 Director / Console / File / Storage / Monitor
+
+
+
+### Avantages / inconvénients
+
+| Avantages                                       | Inconvénients                                        |
+| ----------------------------------------------- | ---------------------------------------------------- |
+| Cross-platform (largest app support)            | Prise en main complexe                               |
+| Automatisation & scheduling                     | Pas de scan de virus                                 |
+| Toujours maintenu (dernière update : juin 2021) | Courbe d'apprentissage plutôt raide (configurations) |
+| Détection d'erreurs                             |                                                      |
+| Cloud & offsite backup                          |                                                      |
+| Efficient deduplication (speeds up the backup)  |                                                      |
+| Virtual environment support                     |                                                      |
+|                                                 |                                                      |
+|                                                 |                                                      |
+|                                                 |                                                      |
+|                                                 |                                                      |
+|                                                 |                                                      |
+|                                                 |                                                      |
+|                                                 |                                                      |
+
+> Src : https://www.toolbox.com/tech/enterprise-software/articles/amanda-vs-bacula-backup-software/
+>
+> 
+
