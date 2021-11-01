@@ -48,7 +48,7 @@ TLS -> PSK = pwd set in the daemons
 
 **What's the RPO?**
 
-> Sauvegardes ultra régulières type toutes les 5 mn ou sauvegardes toutes les semaines ?
+> Sauvegardes ultra régulières type toutes les heures ou sauvegardes toutes les semaines ?
 
 Bacula est très flexible et les sauvegardes peuvent être lancées comme l'admin le prévoit -> RPO variable. 
 
@@ -114,3 +114,4 @@ The documentation can be intimidating when starting out because it’s not struc
 ```
 
 -> Parler de l'optimisation du réseau (déduplication) + charge CPU engendrée
+
