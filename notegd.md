@@ -22,15 +22,38 @@ Bacula permet d'écrire sur plusieurs volumes (aucune limite de capacité de la 
 
 Selon ce qu'on utilise comme  Legato Networker. ARCserveIT, Arkeia ou PerfectBackup+, il peut être intéressant d'utiliser Bacula qui offre un cerrtains nombres de mêmes fonctionnalités et est un logiciel gratuit sous la licence logicielle GNU version 2.
 
--------------------
-Bacula est constitués de 5 composants/services majeurs :
-- Director
-	permet la supervisions des opérations de sauvegarde, restauration, verification et archivage. L'admin peut l'utiliser pour planifier les sauvegardes et récupérer les fichiers. Il est le composant principal et communique les autres composants.
-- Console
-	interface permettant à un utilisateur de communiquer avec le composant Director. Il y a trois version. La première est une interface console (shell), une interface graphique QT (GNOME mais pas complète)  et une interface graphique wxWidgets (+ restauration de fichier interactive). 
-- client / File 
-	logiciel installé sur la machine à sauvegarder. Il est spécifique au système d'exploitation sur lequel il est exécuté et est chargé de fournir les attributs et les données du fichier à la demande du director. Le service est également responsable de la partie de restauration des attributs et des données du fichiers lors des opérations de récupération. Il s'exécute en tant que daemon sur la machine. (Unix/linux + Windows (certains))
-- storage
-	services qui effectuent le stockage et la restaurations des fichiers et des données sur les supports ou volumes physiques. Les daemon de stockage est responsable de la lecture/écritures des bandes (ou autres supportes). 
-- catalog
-	composant qui ...
+----------------
+
+## Présentation 
+
+#### Introduction
+
+Bacula est un logiciel de sauvegarde multi-platforme. Il a été développé à partir de l'année 2000 par Kern Sibbald et sa première version a été publiée deux ans plus tard, c'est-à-dire en 2002. 
+
+Le logiciel est continuellement maintenu, documenté et mis à jour régulièrement. Pour vous donnez une idée, nous avons la dernière release (11.0.5) en juin de cette année. 
+
+Bacula est Open Source. Ses différents composants peuvent tourner sur des systèmes d'exploitation gratuit (linux, FreeBSD, Solaris) ce qui ne nécessite pas l'achat de licences supplémentaires à acheter.  Il est donc possible de tester le logiciel gratuitement.
+
+Il existe une version entreprise mais cette fois-ci payante que l'on vous présentera par la suite.
+
+#### Architecture
+
+Bacula est composé de 5 composants principaux :
+
+- Director : il suppervise les opérations de sauvegarde, restauration, verification et archivage. C'est le composant principal et le point central des intéractions entre les composants.
+- Console : c'est l'interface qui permet aux utilisateurs de communiquer avec le composant Director. Il existe 2 versions :  un shell et une interface web.
+- Client : logiciel installé sur les clients qui doivent être sauvegardés. Il est spécifique à l'OS sur lequel il est présent. Il sera chargé de transmettre les données à sauvegarder et utilisés pour les opérations de récupérations. 
+- Storage : est le logiciel qui effectue le stockage des fichiers sur les supports ou volumes physiques. 
+- Catalog : est responsable de la maintenance des index de fichiers pour tous les fichiers sauvegardés.
+
+https://www.baculasystems.com/trial-documentation/introducing-bacula-enterprise/
+
+
+
+Chiff
+
+https://www.baculasystems.com/wp-content/uploads/2020/Bacula_Enterprise_Edition_for_the_Cloud_s.pdf
+
+https://www.bacula.org/11.0.x-manuals/en/main/Data_Encryption.html
+
+https://www.bacula.org/11.0.x-manuals/en/main/Bacula_TLS_Communications_E.html
