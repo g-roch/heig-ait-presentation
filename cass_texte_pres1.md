@@ -19,8 +19,6 @@ Par contre, Bacula dispose d'une interface graphique qui facilite les choses pou
 
 Aucun scan de virus n'est proposé par Bacula, donc si le système est infecté, le virus sera sauvegardé avec le reste des fichiers.
 
-
-
 La solution Bacula est cross-platform, elle peut s'installer sur différentes distributions de Linux mais également de nombreuses versions de Windows ainsi que MacOS. On peut installer les différents composants sur FreeBSD, Solaris et OpenSolaris en plus. 
 
 Un autre avantage très recherché est la possibilité d'automatiser les sauvegardes et de les planifier. Ainsi pas besoin d'être systématiquement présent pour lancer manuellement les back-ups au moment voulu. 
@@ -37,17 +35,9 @@ La documentation disponible est très complète et se trouve en plusieurs langue
 
 ## Discussion stratégique
 
-Les médiums de backup supportés sont les disques, les DVD, des bandes, ... Ce qui laisse une assez grande liberté aux utilisateurs. 
-
-> La liste suivante a été constituée selon des feedbacks de clients, elle n'est donc pas forcément complète.
-
-![](img/bacula_supported_tape_drives.png)
-
-> Src : https://www.bacula.org/11.0.x-manuals/en/main/Supported_Tape_Drives.html
-
 Bacula est très flexible et les sauvegardes peuvent être planifiées au bon vouloir de l'administrateur, cela signifie que des backups peuvent être effectués jusqu'à une fois par heure. Cela nous donne un RPO (Recovery Point Objective - Perte de Données Maximale Admissible) très faible. Ce RPO dépend de la manière dont Bacula est configuré. 
 
 Le RPO très faible et l'automatisation possible des sauvegardes engendrent une réelle économie pour l'entreprise, on économise le temps des employés et leur travail qu'on ne risque pas de trop perdre.
 
-??? Support des appareils déconnectés ??? 
+??? Support des appareils déconnectés ??? -> Are mobile devices supported that are connected only sporadically?
 
