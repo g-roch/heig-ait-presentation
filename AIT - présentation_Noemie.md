@@ -37,3 +37,41 @@ Rsync
 Amanda
 
 backupborg
+
+------
+
+Bacula existe en deux versions différentes, une version community (qui est open-source) ainsi qu'une version entrerprise, qui est donc payante.
+
+La version payante apporte quelques fonctionnalités en plus que la community; un expert qui permet d'apporter un support technique (le temps de réponse dépend de l'abonnement choisi). La version communautaire demande plus de ressources internes afin gérer les mises à jour, la tester, prendre en charge son support et y ajouter des fonctionnalités avancées à celles de base disponibles.
+
+Il existe donc plusieurs abonnements différents qui sont en fonction du niveau d'assistance et du temps de réponse du support.
+
+Au niveau du coût total annuel de chaque abonnement, il est nécessaire de prendre contact avec Bacula afin de nos besoins spécifiques ainsi que notre projet de sauvegarder et restauration pour qu'ils fassent un devis. Il est également possible de télécharger une version d'essai de 1 mois afin de tester toutes les fonctionnalités ainsi que le support.
+
+--> meilleur choix à faire serait la version Bronze (temps d'assistance assez rapide, nombre de client/serveurs assez larges -> possibilité d'ajouter des serveurs à tout moment)
+
+Les bureaux principaux se trouvent à Yverdon. Donc il est possible de les contacter par téléphone ou de directement passer dans les bureaux.
+
+
+
+Les logiciels que je vais comparer c'est BorgBackup, Bup, Duplicati ainsi que rsync.
+
+On voit que la plupart son open-source et qu'ils sont tous compatibles avec un système Linux.
+
+> Comparaison avec Rsync
+
+Logiciel gratuit et open source. Permet de faire des backups incrémentaux mais ne permet pas de faire des manipulations plus complexes et ne chiffre pas les données de backup.  -> outil assez simple plutôt pour des plus petites infrastructure
+
+> Comparaison avec BorgBackup
+
+Logiciel gratuit et open source. Comme pour Bacula, il a aussi un service payant afin d'offrir du support et des solutions de stockages (les prix sont en fonction du service). Possibilité de faire des backups full/incrémentaux/différentiels comme Bacula. Propose la déduplication. Supporte la compression des données ainsi que les données chiffrées.
+
+--> Ne tourne pas sur Windows.
+
+> Comparaison avec Duplicati
+
+Logiciel gratuit et open source. Backups full et incrémentauy. Chiffre les données et supportent les fichiers chiffrés. Deduplication, fonctionne sur Windows, Linux et MacOS.
+
+> Comparaison avec Bup
+
+Logiciel gratuit et open source. Possibilité de faire des backup incrémentaux et de la deduplication. En comparaison à Bacula, Bup ne fait pas du chiffrement de données backup et il n'a pas d'interface graphique directement proposée avec l'outil (il faut télécharger un outil à côté -> Bups).
