@@ -37,14 +37,16 @@
 \end{frame}
 
 \begin{frame}{Architecture}
- \begin{itemize}
-  \item \TODO chiffré ??
   \begin{center}
-  \includegraphics[height=60mm]{architecture.png}
-   
-  \end{center}
-
-  
+    \includegraphics[height=80mm]{architecture.png}
+  \end{center}  
+\end{frame}
+\begin{frame}{Architecture}
+ \begin{itemize}
+  \item Chiffrement et signature des backups possible
+  \item La master key doit être backupée manuellement hors site
+  \item S'il y a perte de la master key, les backups sont perdu
+  \item \TODO chiffré ??
  \end{itemize}
 \end{frame}
 
@@ -89,18 +91,18 @@ Dès 500\$ par mois sur devis pour la version Entreprise
  \begin{center}
   \begin{tabular}{|l||c|c|c|c|c|c|c|c|c|c|}
     \hline
-    & Coût & \rot{Open source ~} & Backups & \rot{Déduplication ~} & \rot{Chiffrement ~} & \rot{Compression ~} & \rot{WI} & \rot{Linux} & \rot{MacOS X} & \rot{Windows} \\
+    & Coût & \rot{Open source ~} & Backups & \rot{Déduplication ~} & \rot{Chiffrement ~} & \rot{Compression ~} & \rot{Web interface} & \rot{Linux} & \rot{MacOS X} & \rot{Windows} \\
     \hline
     \hline
-    Bacula & \makecell{Gratuit\\payant} & \cellcolor{green!50} & \makecell{Full\\ incrémentaux\\ différentiels} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{black!50} & \cellcolor{black!50} & \cellcolor{black!50} \\
+    Bacula & \makecell{Gratuit\\payant} & \cellcolor{green!50} & \makecell{Full\\ incrémentaux\\ différentiels} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} \\
     \hline
-    BorgBackup & \makecell{Gratuit\\payant} & \cellcolor{green!50} & \makecell{Full\\ incrémentaux\\ différentiels} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{orange!50} & \cellcolor{black!50} & \cellcolor{black!50} &  \\
+    BorgBackup & \makecell{Gratuit\\payant} & \cellcolor{green!50} & \makecell{Full\\ incrémentaux\\ différentiels} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{red!50} & \cellcolor{green!50} & \cellcolor{green!50} &  \\
     \hline
-    Bup & Gratuit & \cellcolor{green!50} & Incrémentaux & \cellcolor{green!50} & \cellcolor{red!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{black!50} & \cellcolor{black!50} &  \\
+    Bup & Gratuit & \cellcolor{green!50} & Incrémentaux & \cellcolor{green!50} & \cellcolor{red!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} &  \\
     \hline
-    Duplicati & Gratuit & \cellcolor{green!50} & \makecell{Full\\ incrémentaux} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{black!50} & \cellcolor{black!50} & \cellcolor{black!50} \\
+    Duplicati & Gratuit & \cellcolor{green!50} & \makecell{Full\\ incrémentaux} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} \\
     \hline
-    Rsync & Gratuit & \cellcolor{green!50} & Incrémentaux & \cellcolor{red!50} & \cellcolor{red!50} & \cellcolor{red!50} & \cellcolor{red!50} & \cellcolor{black!50} & \cellcolor{black!50} & \cellcolor{black!50}  \\
+    Rsync & Gratuit & \cellcolor{green!50} & Incrémentaux & \cellcolor{red!50} & \cellcolor{red!50} & \cellcolor{red!50} & \cellcolor{red!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50}  \\
     \hline
  \end{tabular}
  \end{center}
