@@ -94,10 +94,6 @@ Efficient deduplication
 
 Deduplication engine enables a lesser duration of backups and reduction of storage space. Bacula cuts, stores, and indexes the file chunks on its Deduplication engine. It also uses compression for reducing the file size and speeding up the process.
 
-Largest application support
-
-Bacula consists of one of the largest databases for application support and includes all major platforms from Linux, Mac, Windows, AIX, Unix, Solaris. Application support consists of MS Exchange, MS SQL, My SQL, PostgreSQL, SAP HANA, Oracle, and SQLite.
-
 Virtual environment support
 
 Bacula positions itself as one of the few backup software providing support for almost all virtual environments. It uses XEN server API for accessing and backing up virtual machines and provides integration for VMware, MS Hyper-V, KVM, XEN, and Proxmox.
