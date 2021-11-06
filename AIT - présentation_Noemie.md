@@ -40,23 +40,44 @@ backupborg
 
 ------
 
-Bacula existe en deux versions différentes, une version community (qui est open-source) ainsi qu'une version entrerprise, qui est donc payante.
+Bacula existe en deux versions différentes, une version community (qui est open-source) et une version entrerprise, qui est donc payante.
 
-La version payante apporte quelques fonctionnalités en plus que la community; un expert qui permet d'apporter un support technique (le temps de réponse dépend de l'abonnement choisi). La version communautaire demande plus de ressources internes afin gérer les mises à jour, la tester, prendre en charge son support et y ajouter des fonctionnalités avancées à celles de base disponibles.
+La version payante apporte quelques fonctionnalités en plus que la community; entre autres elle met un disposition un expert qui permet d'apporter un support technique ainsi qu'une assitance pour répondre aux questions.
 
-Il existe donc plusieurs abonnements différents qui sont en fonction du niveau d'assistance et du temps de réponse du support.
+A propos de la version communautaire, elle demande plus de ressources internes afin gérer les mises à jour, la tester, prendre en charge son support et y ajouter des fonctionnalités avancées à celles de base disponibles.
 
-Au niveau du coût total annuel de chaque abonnement, il est nécessaire de prendre contact avec Bacula afin de nos besoins spécifiques ainsi que notre projet de sauvegarder et restauration pour qu'ils fassent un devis. Il est également possible de télécharger une version d'essai de 1 mois afin de tester toutes les fonctionnalités ainsi que le support.
+-> donc la version Entreprise est plus appropriée pour les backups d'entreprise et de plus grosse infrastructure à sauvegarder.
 
---> meilleur choix à faire serait la version Bronze (temps d'assistance assez rapide, nombre de client/serveurs assez larges -> possibilité d'ajouter des serveurs à tout moment)
+Il existe donc plusieurs abonnements différents, 5 différents, qui sont en fonction du niveau d'assistance et du temps de réponse du support.
+
+Il y a plusieurs options différentes dans ces abonnements:
+
+On remarque donc qu'ils dépendent du nombre de clients (machines et serveurs) à sauvegarder. 
+
+Il y a également l'option du temps de réponse du support qui dépendra donc du niveau de sévérité de la panne (il y a 4 niveaux différents, 4 étant la plus sévère). On voit qu'au plus vite un expert peut intervenir dès 1h après une panne de grande sévérité. Je précise que ce sont seulement des jours ainsi que des heures ouvrables, donc le week-end n'est pas inclu.
+
+Au niveau du coût total annuel de chaque abonnement, il est nécessaire de prendre contact avec Bacula afin de définir nos besoins spécifiques ainsi que notre projet de sauvegarde et restauration pour qu'ils fassent un devis. Il est également possible de télécharger une version d'essai de 1 mois afin de tester toutes les fonctionnalités ainsi que le support !! Mais on peut compter au minimum 500$ par mois pour l'abonnement standard.
+
+--> au niveau des abonnements à prendre, tout dépend du besoin de disponibilité des données:
+
+- Entreprise de recherche en informatique par exemple, à ce moment là le temps de réponse du support pourrait être un peu plus large car ils peuvent stopper leur recherche pendant un peu plus de temps et il n'y aura pas de répercussion
+- Entreprise qui possède un site web, à ce moment, en cas de panne sévère, si le service est down, il est impératif de dépanner au plus vite afin de rendre le site web à nouveau disponible
+
+Donc comme je l'ai dit avant, il est préférable de prendre contact directement avec Bacula et de demander un devis afin de trouver le meilleur abonnement pour l'entreprise.
 
 Les bureaux principaux se trouvent à Yverdon. Donc il est possible de les contacter par téléphone ou de directement passer dans les bureaux.
 
 
 
-Les logiciels que je vais comparer c'est BorgBackup, Bup, Duplicati ainsi que rsync.
+Les outils que je vais comparer avec Bacula c'est BorgBackup, Bup, Duplicati ainsi que rsync.
 
-On voit que la plupart son open-source et qu'ils sont tous compatibles avec un système Linux.
+Bacula propose deux versions de son logiciel, une gratuite qui est open source et une autre payante. BorgBackup propose également ces deux options. Sinon tous les outils propose une version gratuite et open-source.
+
+Bacula permet d'effectuer des backups de 3 manières différentes, full/incrémental/différentiel, BorgBackup le permet aussi. Sinon l'outil Duplicati propose le backup différentiel en moins.
+
+La plupart des outils comparés peuvent être utilisés avec les systèmes d'exploitation Linux, MacOS et Windows. Il y a juste BorgBackup et Bup qui ne supporte pas Windows.
+
+-> on constate finalement que Bacula est un outil complet qui est assez flexible. Mais BorgBackup peut également être une alternative possible, mais seulement si on n'utilise pas Windows.
 
 > Comparaison avec Rsync
 

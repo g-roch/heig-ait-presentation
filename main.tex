@@ -8,6 +8,7 @@
 \usepackage{makecell}
 \usepackage{xcolor}
 \usepackage{colortbl}
+\usepackage[flushleft]{threeparttable}
 
 \graphicspath{ {./img/} }
 
@@ -66,6 +67,12 @@
 \begin{frame}{Coûts}
 \begin{center}
 
+\begin{itemize}
+    \item 2 versions: Community Open Source et Entreprise
+    \item La version Entreprise propose (entre autres) un expert qui permet d'apporter un support technique
+    \item Dès 500\$ par mois sur devis pour la version Entreprise (abonnement Standard)
+\end{itemize}
+
  \begin{tabular}{|l|ccccc|}
     \hline
     & Standard & Bronze & Silver & Gold & Platinum \\
@@ -86,10 +93,6 @@
     \hline
  \end{tabular}
 \end{center}
-
-2 versions: Community Open Source et Entreprise
-
-Dès 500\$ par mois sur devis pour la version Entreprise
 \end{frame}
 
 
@@ -102,16 +105,21 @@ Dès 500\$ par mois sur devis pour la version Entreprise
     \hline
     Bacula & \makecell{Gratuit\\Payant} & \cellcolor{green!50} & \makecell{Full\\ Incrémentaux\\ Différentiels} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} \\
     \hline
-    BorgBackup & \makecell{Gratuit\\Payant} & \cellcolor{green!50} & \makecell{Full\\ Incrémentaux\\ Différentiels} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{orange!50} & \cellcolor{green!50} & \cellcolor{green!50} &  \\
+    BorgBackup & \makecell{Gratuit\\Payant} & \cellcolor{green!50} & \makecell{Full\\ Incrémentaux\\ Différentiels} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{orange!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{red!50} \\
     \hline
-    Bup & Gratuit & \cellcolor{green!50} & Incrémentaux & \cellcolor{green!50} & \cellcolor{red!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} &  \\
+    Bup & Gratuit & \cellcolor{green!50} & Incrémentaux & \cellcolor{green!50} & \cellcolor{red!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & 
+    \cellcolor{red!50} \\
     \hline
     Duplicati & Gratuit & \cellcolor{green!50} & \makecell{Full\\ Incrémentaux} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} \\
     \hline
     Rsync & Gratuit & \cellcolor{green!50} & Incrémentaux & \cellcolor{red!50} & \cellcolor{red!50} & \cellcolor{red!50} & \cellcolor{red!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50}  \\
     \hline
  \end{tabular}
- \TODO légende
+ \begin{tablenotes}
+      \tiny
+  \fcolorbox{black}{green!50}{\rule{0pt}{4pt}\rule{4pt}{0pt}}\quad Oui \fcolorbox{black}{red!50}{\rule{0pt}{4pt}\rule{4pt}{0pt}}\quad Non
+  \fcolorbox{black}{orange!50}{\rule{0pt}{4pt}\rule{4pt}{0pt}}\quad En développement
+    \end{tablenotes}
  \end{center}
 \end{frame}
 
