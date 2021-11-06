@@ -42,7 +42,7 @@ Concernant le coût total annuel de chaque abonnement, il est nécessaire de pre
 
 Bacula présente plus d'avantages que d'inconvénients : 
 
-![](img/avantages-inconvenients_bacula.png)
+![](img/avantages_inconvenients.png)
 
 > Déduplication de données : factorisation de séquences de données identiques afin d'économiser l'espace utilisé (source: https://fr.wikipedia.org/wiki/D%C3%A9duplication). 
 

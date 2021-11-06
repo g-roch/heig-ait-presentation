@@ -14,11 +14,16 @@
 \newcommand{\TODO}{TODO:}
 \newcommand*{\rot}{\rotatebox{90}}
 
-\title{Bacula\\~\\AIT --- Présentation}
-% \author{Cassandre Wojciechowski \\ Gwendoline Dössegger \\ Noémie Plancherel \\ Gaby Roch}
-% \author{s}
-\hypersetup{pdfauthor={C. Wojciechowski, G. Dössegger, N. Plancherel, G. Roch}}
 
+% \title{Bacula\\~\\AIT --- Présentation}
+
+\title{
+    AIT --- Présentation \\
+    \centering\includegraphics [height=20mm] {logo_bacula.png} 
+}
+% \titlegraphic{\includegraphics [height=.2\textheight] {logo_bacula.png}}
+\author{Gwendoline Dössegger, Noémie Plancherel, Gaby Roch, Cassandre Wojciechowski}
+\hypersetup{pdfauthor={G. Dössegger, N. Plancherel, G. Roch, C. Wojciechowski}}
 \date{8 novembre 2021}
 
 \begin{document}
@@ -41,20 +46,20 @@
     \includegraphics[height=80mm]{architecture.png}
   \end{center}  
 \end{frame}
+
 \begin{frame}{Architecture}
  \begin{itemize}
   \item Chiffrement et signature des backups possible
-  \item La master key doit être backupée manuellement hors site
-  \item S'il y a perte de la master key, les backups sont perdu
+  \item La master key doit être sauvegardée manuellement hors-site
+  \item S'il y a perte de la master key, les backups sont perdus
   \item \TODO chiffré ??
  \end{itemize}
 \end{frame}
 
 \begin{frame}{Démonstration}
  \begin{itemize}
-  \item \TODO Temps de restauration de 1 fichier d'il y a 1 semaine
-  \TODO graph CPU
-  \item 
+  \item \TODO Temps de restauration d'un fichier sauvegardé il y a 1 semaine
+  \item \TODO graph CPU
  \end{itemize}
 \end{frame}
 
@@ -82,7 +87,7 @@
  \end{tabular}
 \end{center}
 
-2 versions: Community open source et Entreprise
+2 versions: Community Open Source et Entreprise
 
 Dès 500\$ par mois sur devis pour la version Entreprise
 \end{frame}
@@ -95,13 +100,13 @@ Dès 500\$ par mois sur devis pour la version Entreprise
     & Coût & \rot{Open source ~} & Backups & \rot{Déduplication ~} & \rot{Chiffrement ~} & \rot{Compression ~} & \rot{Web interface} & \rot{Linux} & \rot{MacOS X} & \rot{Windows} \\
     \hline
     \hline
-    Bacula & \makecell{Gratuit\\payant} & \cellcolor{green!50} & \makecell{Full\\ incrémentaux\\ différentiels} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} \\
+    Bacula & \makecell{Gratuit\\Payant} & \cellcolor{green!50} & \makecell{Full\\ Incrémentaux\\ Différentiels} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} \\
     \hline
-    BorgBackup & \makecell{Gratuit\\payant} & \cellcolor{green!50} & \makecell{Full\\ incrémentaux\\ différentiels} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{orange!50} & \cellcolor{green!50} & \cellcolor{green!50} &  \\
+    BorgBackup & \makecell{Gratuit\\Payant} & \cellcolor{green!50} & \makecell{Full\\ Incrémentaux\\ Différentiels} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{orange!50} & \cellcolor{green!50} & \cellcolor{green!50} &  \\
     \hline
     Bup & Gratuit & \cellcolor{green!50} & Incrémentaux & \cellcolor{green!50} & \cellcolor{red!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} &  \\
     \hline
-    Duplicati & Gratuit & \cellcolor{green!50} & \makecell{Full\\ incrémentaux} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} \\
+    Duplicati & Gratuit & \cellcolor{green!50} & \makecell{Full\\ Incrémentaux} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50} \\
     \hline
     Rsync & Gratuit & \cellcolor{green!50} & Incrémentaux & \cellcolor{red!50} & \cellcolor{red!50} & \cellcolor{red!50} & \cellcolor{red!50} & \cellcolor{green!50} & \cellcolor{green!50} & \cellcolor{green!50}  \\
     \hline
@@ -111,7 +116,6 @@ Dès 500\$ par mois sur devis pour la version Entreprise
 \end{frame}
 
 \begin{frame}{Avantages / inconvénients}
-\TODO array size
  \TODO optimisation backup réseau + CPU
     \begin{center}
      \begin{tabular}{|l|l|}
@@ -120,15 +124,20 @@ Dès 500\$ par mois sur devis pour la version Entreprise
      \hline
      \hline
         Interface utilisateur graphique & Prise en main complexe (fichiers \\ 
-        & de configuration) \\
+                                        & de configuration) \\
      \hline
-      Cross-platform & Pas de scan de virus \\
+     Cross-platform & Pas de scan de virus \\
      \hline
-      Automatisation \& planification des tâches & \\
+     Automatisation \& planification des tâches & Configuration nécessaire au backup \\ 
+                                                & des appareils mobiles\\
+     \hline
+     Sauvegarde continue (CDP) & \\
      \hline
      Toujours maintenu (dernière update : juin 2021) & \\
      \hline
      Sauvegarde Cloud \& hors-site & \\
+     \hline
+     Charge réseau \& CPU modulables & \\
      \hline
      Déduplication des données & \\
      \hline
@@ -151,9 +160,9 @@ Dès 500\$ par mois sur devis pour la version Entreprise
 \end{frame}
 
 \begin{frame}{Questions ?}
- \begin{itemize}
-   \item
- \end{itemize}
+  \begin{center}
+    \includegraphics[height=60mm]{bat_kitty.jpg}
+  \end{center}  
 \end{frame}
 
 
