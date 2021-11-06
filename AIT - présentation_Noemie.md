@@ -44,7 +44,7 @@ Bacula existe en deux versions différentes, une version community (qui est open
 
 La version payante apporte quelques fonctionnalités en plus que la community; entre autres elle met un disposition un expert qui permet d'apporter un support technique ainsi qu'une assitance pour répondre aux questions.
 
-A propos de la version communautaire, elle demande plus de ressources internes afin gérer les mises à jour, la tester, prendre en charge son support et y ajouter des fonctionnalités avancées à celles de base disponibles.
+Quant à la version communautaire, elle demande plus de ressources internes afin gérer les mises à jour, la tester, prendre en charge son support et y ajouter des fonctionnalités avancées à celles de base disponibles.
 
 -> donc la version Entreprise est plus appropriée pour les backups d'entreprise et de plus grosse infrastructure à sauvegarder.
 
@@ -54,14 +54,14 @@ Il y a plusieurs options différentes dans ces abonnements:
 
 On remarque donc qu'ils dépendent du nombre de clients (machines et serveurs) à sauvegarder. 
 
-Il y a également l'option du temps de réponse du support qui dépendra donc du niveau de sévérité de la panne (il y a 4 niveaux différents, 4 étant la plus sévère). On voit qu'au plus vite un expert peut intervenir dès 1h après une panne de grande sévérité. Je précise que ce sont seulement des jours ainsi que des heures ouvrables, donc le week-end n'est pas inclu.
-
-Au niveau du coût total annuel de chaque abonnement, il est nécessaire de prendre contact avec Bacula afin de définir nos besoins spécifiques ainsi que notre projet de sauvegarde et restauration pour qu'ils fassent un devis. Il est également possible de télécharger une version d'essai de 1 mois afin de tester toutes les fonctionnalités ainsi que le support !! Mais on peut compter au minimum 500$ par mois pour l'abonnement standard.
+Il y a également l'option du temps de réponse du support qui dépendra donc du niveau de sévérité de la panne (il y a 4 niveaux différents, 4 étant la plus sévère). On voit qu'au plus vite un expert peut intervenir dès 1h après une panne de grande sévérité -> ce qui est assez rapide. Je précise que ce sont seulement des jours ainsi que des heures ouvrables, donc le week-end n'est pas inclu.
 
 --> au niveau des abonnements à prendre, tout dépend du besoin de disponibilité des données:
 
 - Entreprise de recherche en informatique par exemple, à ce moment là le temps de réponse du support pourrait être un peu plus large car ils peuvent stopper leur recherche pendant un peu plus de temps et il n'y aura pas de répercussion
 - Entreprise qui possède un site web, à ce moment, en cas de panne sévère, si le service est down, il est impératif de dépanner au plus vite afin de rendre le site web à nouveau disponible
+
+Au niveau du coût total annuel de chaque abonnement, il est nécessaire de prendre contact avec Bacula afin de définir nos besoins spécifiques ainsi que notre projet de sauvegarde et restauration pour qu'ils fassent un devis. Il est également possible de télécharger une version d'essai de 1 mois afin de tester toutes les fonctionnalités ainsi que le support !! Mais on peut compter au minimum 500$ par mois pour l'abonnement standard.
 
 Donc comme je l'ai dit avant, il est préférable de prendre contact directement avec Bacula et de demander un devis afin de trouver le meilleur abonnement pour l'entreprise.
 
