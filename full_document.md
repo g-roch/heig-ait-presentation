@@ -44,7 +44,7 @@ Concernant le coût total annuel de chaque abonnement, il est nécessaire de pre
 
 
 
-#### Avantages / Inconvénient
+#### Avantages / Inconvénients
 
 Bacula présente plus d'avantages que d'inconvénients : 
 
