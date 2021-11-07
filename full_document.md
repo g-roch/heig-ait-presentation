@@ -4,15 +4,13 @@
 >
 > Cours : Administration IT (AIT) 2021-2022
 
-## Résumé 
+## Présentation 
 
-Bacula est un logiciel de sauvegarde multi-platforme, développé dès 2000 par Kern Sibbald et dont la première version a été publiée en 2002.
+Bacula est un logiciel de sauvegarde multi-platforme, développé dès 2000 par Kern Sibbald et dont la première version a été publiée en 2002. Il est constamment maintenu, documenté et mis à jour.
 
-Bacula est open-source. Ses différents composants peuvent tourner sur des systèmes d'exploitation gratuits (Linux, FreeBSD, Solaris) ce qui ne nécessite pas l'achat de licences supplémentaires à acheter. Il est donc possible de tester le logiciel gratuitement. Bacula tourne également sur Windows et MacOS. 
+Bacula possède une version community qui est OpenSource. Ses différents composants/services peuvent tourner sur des systèmes d'exploitation gratuits ce qui ne nécessite pas des frais supplémentaires pour tester le logiciel. Bacula tourne également sur Windows et MacOS. 
 
 ![](img/bacula_cross-platform.png)
-
-Il existe une version payante qui présente des avantages non-négligeables.
 
 Bacula est un set de programmes qui permet à un administrateur réseau de gérer des sauvegardes, la récupération et la vérification de données informatiques sur un réseau d'ordinateurs de différents types.
 
@@ -22,29 +20,39 @@ Bacula est un programme de sauvegarde client/serveur réseau. Il est "facile" d'
 
 Il est évolutif et peut être utilisé pour de petits systèmes informatiques simples à des systèmes composés de centaines d'ordinateurs situés sur un grand réseau.
 
+
+
+#### Architectures
+
 Bacula est composé de 5 composants principaux :
 
-- **Director** : Supervision des opérations de sauvegarde, restauration, vérification et archivage. C'est le composant principal et le point central des interactions entre les composants.
-- **Console** : Communication avec le composant Director. Il existe 2 versions: un shell et une interface web.
-- **Client** : Logiciel installé sur les clients qui doivent être sauvegardés. Il est spécifique à l'OS sur lequel il est présent. Il sera chargé de transmettre les données à sauvegarder et est utilisé pour les opérations de récupération.
-- **Storage** : Logiciel qui effectue le stockage des fichiers sur les supports ou volumes physiques.
-- **Catalog** : Maintenance des index de fichiers pour tous les fichiers sauvegardés.
+- **Director** : il suppervise les opérations de sauvegarde, restauration, verification et archivage. C'est le composant principal et le point central des intéractions entre les composants.
+- **Console** : c'est l'interface qui permet aux utilisateurs de communiquer avec le composant Director. Il existe 2 versions :  un shell et une interface web.
+- **Client** : logiciel installé sur les clients qui doivent être sauvegardés. Il est spécifique à l'OS sur lequel il est présent. Il sera chargé de transmettre les données à sauvegarder et utilisés pour les opérations de récupérations. 
+- **Storage** : composant responsable de l'écriture des sauvegardes sur les médias choisi. Les médiums de backup supportés sont les disques, les bandes et le cloud ce qui est assez classique pour les sauvegardes. 
+- **Catalog** : est responsable de la maintenance des index de fichiers pour tous les fichiers sauvegardés.
 
 ![](img/architecture.png)
 
-Il existe deux versions de Bacula, une version *community* qui est open-source, donc gratuite et une version entreprise qui est payante sous forme d'abonnements mensuels. 
+#### Coûts
 
-Il y a 6 types d'abonnements différents liés aux nombres de clients/serveurs à sauvegarder et le nombre de plateformes différentes (OS) :
+La seconde version de Bacula, entreprise, est payante sous forme d'abonnements mensuels. Elle présente des avantages non-négligeables. Il y a 6 types d'abonnements différents liés aux nombres de clients/serveurs à sauvegarder et le nombre de plateformes différentes (OS) :
 
 ![](img/costs_bacula.png)
 
 Concernant le coût total annuel de chaque abonnement, il est nécessaire de prendre contact avec Bacula afin de donner nos besoins spécifiques ainsi que notre projet de sauvegarde et restauration pour dresser un devis. Il est également possible de télécharger une version d'essai de 1 mois afin de tester toutes les fonctionnalités ainsi que le support.
+
+
+
+#### Avantages / Inconvénient
 
 Bacula présente plus d'avantages que d'inconvénients : 
 
 ![](img/avantages_inconvenients.png)
 
 > Déduplication de données : factorisation de séquences de données identiques afin d'économiser l'espace utilisé (source: https://fr.wikipedia.org/wiki/D%C3%A9duplication). 
+
+
 
 ## Installation (Debian)
 
