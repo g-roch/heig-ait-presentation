@@ -17,8 +17,8 @@ Bacula est composé de 5 composants principaux :
 - **Director** : il suppervise les opérations de sauvegarde, restauration, verification et archivage. C'est le composant principal et le point central des intéractions entre les composants.
 - **Console** : c'est l'interface qui permet aux utilisateurs de communiquer avec le composant Director. Il existe 2 versions :  un shell et une interface web.
 - **Client (file daemon)** : logiciel installé sur les machines clientes. Il est spécifique à l'OS sur lequel il est présent. Il sera chargé de transmettre les données à sauvegarder et est utilisés pour les opérations de récupérations.  
-- **Storage** : composant responsable de l'écriture des sauvegardes sur les médias choisi. Les médiums de backup supportés sont les disques, les bandes et le cloud ce qui est assez classique pour les sauvegardes. 
-- **Catalog** : est responsable de la maintenance des index de fichiers pour tous les fichiers sauvegardés.
+- **Storage** : composant responsable de l'écriture des sauvegardes sur les médias choisi: Par exemple sur des disques, les bandes et dans le cloud.
+- **Catalog** : est responsable de la maintenance des index de fichiers pour tous les fichiers sauvegardés et stock les info sur les différentes sauvegardes réalisées.
 
 #### Chiffrement
 
@@ -26,4 +26,5 @@ En ce qui concerne le chiffrement, Bacula permet de chiffrer et signer les donn�
 
 - Il faut tenir compte que seul le contenu des fichiers est chiffrés/signé alors que les métadonnées ne le sont pas (ça concerne par exemple : le nom du fichier, les permissions et le propriétaire du fichier).
 - Attention, il est important d'avoir plusieurs sauvegardes de la master key utilisé pour le chiffrement car si on la perd, toutes les données chiffrées seront perdu.
+- Communication via TLS => chiffrée
 
