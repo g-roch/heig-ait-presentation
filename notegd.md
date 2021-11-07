@@ -22,8 +22,8 @@ Bacula est composé de 5 composants principaux :
 
 #### Chiffrement
 
-En ce qui concerne le chiffrement, Bacula permet de chiffrer et signer les données qui sont a backup dans le storages (transmission entre Storage Daemon et Client). Les données sont chiffrées autant dans la transmission que dans le stockage du backup.
+En ce qui concerne le chiffrement, Bacula permet de chiffrer et signer les données qui sont a backup dans le storage. Les données sont chiffrées autant dans la transmission que dans le backup.
 
-- Il faut tenir compte que seul le contenu des fichiers est chiffrés/signé alors que les métadonnées ne le sont pas (on connait donc le nom, les permissions et le propriétaire du fichier).
-- Attention, il est important d'avoir plusieurs sauvegardes des master keys utilisées pour le chiffrement car si on la perd, toutes les données chiffrées seront perdu.
+- Il faut tenir compte que seul le contenu des fichiers est chiffrés/signé alors que les métadonnées ne le sont pas (ça concerne par exemple : le nom du fichier, les permissions et le propriétaire du fichier).
+- Attention, il est important d'avoir plusieurs sauvegardes de la master key utilisé pour le chiffrement car si on la perd, toutes les données chiffrées seront perdu.
 
