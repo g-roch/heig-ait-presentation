@@ -3,14 +3,18 @@
 > Auteurs : Gwendoline Dössegger, Noémie Plancherel, Gaby Roch, Cassandre Wojciechowski
 >
 > Cours : Administration IT (AIT) 2021-2022
+>
+> Date : 8 novembre 2021
 
 ## Présentation 
 
 Bacula est un logiciel de sauvegarde multi-platforme, développé dès 2000 par Kern Sibbald et dont la première version a été publiée en 2002. Il est constamment maintenu, documenté et mis à jour.
 
-Bacula possède une version community qui est OpenSource. Ses différents composants/services peuvent tourner sur des systèmes d'exploitation gratuits ce qui ne nécessite pas des frais supplémentaires pour tester le logiciel. Bacula tourne également sur Windows et MacOS. 
+Bacula possède une version community qui est OpenSource. Ses différents composants/services peuvent tourner sur des systèmes d'exploitation gratuits ce qui ne nécessite pas de frais supplémentaires pour tester le logiciel. Bacula tourne également sur Windows et MacOS. 
 
 ![](img/bacula_cross-platform.png)
+
+> Source du tableau : https://www.bacula.org/what-is-bacula/supported-operating-systems/
 
 Bacula est un set de programmes qui permet à un administrateur réseau de gérer des sauvegardes, la récupération et la vérification de données informatiques sur un réseau d'ordinateurs de différents types.
 
@@ -18,7 +22,7 @@ Il peut fonctionner sur un seul ordinateur et peut effectuer des  sauvegardes su
 
 Bacula est un programme de sauvegarde client/serveur réseau. Il est "facile" d'utilisation et efficace en offrant de nombreuses fonctionnalités avancées de gestion du stockage pour faciliter la recherche et la récupération de fichiers perdus ou endommagés.
 
-Il est évolutif et peut être utilisé pour de petits systèmes informatiques simples à des systèmes composés de centaines d'ordinateurs situés sur un grand réseau.
+Il est évolutif et peut être utilisé pour de petits systèmes informatiques simples comme pour des systèmes composés de centaines d'ordinateurs situés sur un grand réseau.
 
 
 
@@ -26,13 +30,17 @@ Il est évolutif et peut être utilisé pour de petits systèmes informatiques s
 
 Bacula est composé de 5 composants principaux :
 
-- **Director** : il suppervise les opérations de sauvegarde, restauration, verification et archivage. C'est le composant principal et le point central des intéractions entre les composants.
+- **Director** : il supervise les opérations de sauvegarde, restauration, vérification et archivage. C'est le composant principal et le point central des interactions entre les composants.
 - **Console** : c'est l'interface qui permet aux utilisateurs de communiquer avec le composant Director. Il existe 2 versions :  un shell et une interface web.
-- **Client** : logiciel installé sur les clients qui doivent être sauvegardés. Il est spécifique à l'OS sur lequel il est présent. Il sera chargé de transmettre les données à sauvegarder et utilisés pour les opérations de récupérations. 
-- **Storage** : composant responsable de l'écriture des sauvegardes sur les médias choisi. Les médiums de backup supportés sont les disques, les bandes et le cloud ce qui est assez classique pour les sauvegardes. 
-- **Catalog** : est responsable de la maintenance des index de fichiers pour tous les fichiers sauvegardés.
+- **Client** : c'est le logiciel installé sur les clients qui doivent être sauvegardés. Il est spécifique à l'OS sur lequel il est présent. Il sera chargé de transmettre les données à sauvegarder et utilisées pour les opérations de récupération. 
+- **Storage** : c'est le composant responsable de l'écriture des sauvegardes sur les médias choisis. Les médiums de backup supportés sont les disques, les bandes et le cloud ce qui est assez classique pour les sauvegardes. 
+- **Catalog** : il est responsable de la maintenance des index de fichiers pour tous les fichiers sauvegardés.
 
 ![](img/architecture.png)
+
+> Source de l'image : https://www.baculasystems.com/fr/architecture-de-sauvegarde-de-donnes-dentreprises-de-bacula-enterprise/
+
+
 
 #### Coûts
 
@@ -56,7 +64,9 @@ Bacula présente plus d'avantages que d'inconvénients :
 
 ## Installation (Debian)
 
-> Nous fournissons ici un guide d'installation pour Debian, il existe d'autres manières de procéder mais il serait trop long de toutes les inclure dans le présent document. 
+> Nous fournissons ici un guide d'installation pour Debian, il existe d'autres manières de procéder mais il serait trop long de toutes les inclure dans le présent document.
+>
+> Il existe également une machine virtuelle de démonstration disponible sur inscription pendant 30 jours. 
 
 Il faut d'abord installer les paquets nécessaires : 
 
@@ -128,21 +138,21 @@ Il faut ajuster les configurations IPtables pour autoriser ces communications.
 ### Ajouter un client
 
 - Se rendre sur `http://<ip du director>/clients` et télécharger le client correspondant à notre OS
-- Le reste de l’installation se fait automatiquement, une question vous est posée pour savoir si un backup Full doit être fait immédiatement.
+- Le reste de l’installation se fait automatiquement, une question vous est posée pour savoir si un backup `Full` doit être fait immédiatement
 
 ### Définir un horaire de backup
 
-- Dans l’interface web d’administration, `configuration` → ` Configure Bacula`![image-20211108082612797](image-20211108082612797.png)
+- Dans l’interface web d’administration, `Configuration` → ` Configure Bacula`![image-20211108082612797](image-20211108082612797.png)
 
 - Puis dans `Schedules` → `(+) Schedules`
 
   ![image-20211108083449762](image-20211108083449762.png)
 
-- Définissez un nom et ajoutez des horaires grâce au `(+)`se trouvant en bas de l’interface
+- Définissez un nom et ajoutez des horaires grâce au `(+)` se trouvant en bas de l’interface
 
   ![image-20211108083609581](image-20211108083609581.png)
 
-- Un popup s’affiche nous permettant de configurer la fréquence
+- Un pop-up s’affiche nous permettant de configurer la fréquence
 
   ![image-20211108083654906](image-20211108083654906.png)
 
@@ -152,7 +162,7 @@ Il faut ajuster les configurations IPtables pour autoriser ces communications.
 
 ### Création d’un job
 
-- Dans l’interface web d’administration, `configuration` → ` Configure Bacula`![image-20211108082612797](image-20211108082612797.png)
+- Dans l’interface web d’administration, `Configuration` → ` Configure Bacula`![image-20211108082612797](image-20211108082612797.png)
 
 - Puis dans `Jobs` → `Add a New Backup`![image-20211108082715871](image-20211108082715871.png)
 
@@ -160,7 +170,7 @@ Il faut ajuster les configurations IPtables pour autoriser ces communications.
 
   ![image-20211108082952530](image-20211108082952530.png)
 
-- Sélectionnez le client à ésauvegarder
+- Sélectionnez le client à sauvegarder
 
   ![image-20211108083039658](image-20211108083039658.png)
 
@@ -168,11 +178,11 @@ Il faut ajuster les configurations IPtables pour autoriser ces communications.
 
   ![image-20211108083124504](image-20211108083124504.png)
 
-- Indiquer où vous désirez que le backup soit fait
+- Indiquez où vous désirez que le backup soit fait
 
   ![image-20211108083210096](image-20211108083210096.png)
 
-- Indiquer la fréquence du backup
+- Indiquez la fréquence du backup
 
   ![image-20211108083254530](image-20211108083254530.png)
 
@@ -192,11 +202,11 @@ Il faut ajuster les configurations IPtables pour autoriser ces communications.
 
   ![image-20211108084245083](image-20211108084245083.png)
 
-- Lors du clic sur `Run Job` une fenêtre s’affiche permettant de voir l’avancement du backup
+- Lors du clic sur `Run Job`, une fenêtre s’affiche permettant de voir l’avancement du backup
 
   ![image-20211108084516820](image-20211108084516820.png)
 
-### Réstauration d’un fichier
+### Restauration d’un fichier
 
 - Dans l’interface web d’administration, `Jobs` → ` Web Restore`
 
@@ -210,11 +220,11 @@ Il faut ajuster les configurations IPtables pour autoriser ces communications.
 
   ![image-20211108084736662](image-20211108084736662.png)
 
-- Déplacez les fichiers/dossiers à restorer, dans la  `Restore Selections Area` (Dans la capture ci-dessous, seul le dossier `/etc` est selectionné)
+- Déplacez les fichiers/dossiers à restaurer, dans la  `Restore Selections Area` (dans la capture ci-dessous, seul le dossier `/etc` est selectionné)
 
   ![image-20211108084844380](image-20211108084844380.png)
 
-- Sélectionnez le client et l’emplacement de restauration, peut-être différent ou identique à l’emplacement original
+- Sélectionnez le client et l’emplacement de restauration, peut être différent ou identique à l’emplacement original
 
   ![image-20211108085031840](image-20211108085031840.png)
 
