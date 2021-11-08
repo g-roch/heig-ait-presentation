@@ -128,7 +128,7 @@ Il faut ajuster les configurations IPtables pour autoriser ces communications.
 ### Ajouter un client
 
 - Se rendre sur `http://<ip du director>/clients` et télécharger le client correspondant à notre OS
-- Le reste de l’installation se fait automatiquement, un question vous est posé pour savoir si un backup Full doit être fait immédiatement.
+- Le reste de l’installation se fait automatiquement, une question vous est posée pour savoir si un backup Full doit être fait immédiatement.
 
 ### Définir un horaire de backup
 
@@ -138,7 +138,7 @@ Il faut ajuster les configurations IPtables pour autoriser ces communications.
 
   ![image-20211108083449762](image-20211108083449762.png)
 
-- Définissez un nom et ajouter des horaires grâce au `(+)`se trouvant en bas de l’interface
+- Définissez un nom et ajoutez des horaires grâce au `(+)`se trouvant en bas de l’interface
 
   ![image-20211108083609581](image-20211108083609581.png)
 
@@ -146,7 +146,7 @@ Il faut ajuster les configurations IPtables pour autoriser ces communications.
 
   ![image-20211108083654906](image-20211108083654906.png)
 
-- Puis indiquez quel niveau de backup vous désirez à cette horaire (`Full`, `Incrémentat`, `Différentiel`)
+- Puis indiquez quel niveau de backup vous désirez à cette horaire (`Full`, `Incrémental`, `Différentiel`)
 
   ![image-20211108083756539](image-20211108083756539.png)
 
@@ -160,11 +160,11 @@ Il faut ajuster les configurations IPtables pour autoriser ces communications.
 
   ![image-20211108082952530](image-20211108082952530.png)
 
-- Séléctionner le client à sauvegarder
+- Sélectionnez le client à ésauvegarder
 
   ![image-20211108083039658](image-20211108083039658.png)
 
-- Sélectionnez ce que vous désirer sauvegarder
+- Sélectionnez ce que vous désirez sauvegarder
 
   ![image-20211108083124504](image-20211108083124504.png)
 
@@ -184,15 +184,15 @@ Il faut ajuster les configurations IPtables pour autoriser ces communications.
 
   ![image-20211108083913134](image-20211108083913134.png)
 
-- Sélectionnez le jobs à lancer
+- Sélectionnez le job à lancer
 
   ![image-20211108084155644](image-20211108084155644.png)
 
-- Modifiez au besoin la configuration du jobs (pour cette execution seulement)
+- Modifiez au besoin la configuration du job (pour cette exécution seulement)
 
   ![image-20211108084245083](image-20211108084245083.png)
 
-- Lors du click sur `Run Job` un fenêtre s’affiche permettant de voir l’avancement du backup
+- Lors du clic sur `Run Job` une fenêtre s’affiche permettant de voir l’avancement du backup
 
   ![image-20211108084516820](image-20211108084516820.png)
 
@@ -210,11 +210,11 @@ Il faut ajuster les configurations IPtables pour autoriser ces communications.
 
   ![image-20211108084736662](image-20211108084736662.png)
 
-- Déplacez les fichiers/dossiers à restorer, dans la  `Restore Selections Area` (Dans la capture ci-dessous, seul le dossier `/etc` est selectionnez)
+- Déplacez les fichiers/dossiers à restorer, dans la  `Restore Selections Area` (Dans la capture ci-dessous, seul le dossier `/etc` est selectionné)
 
   ![image-20211108084844380](image-20211108084844380.png)
 
-- Sélectionnez le client et l’emplacement de restauration, peut être différent ou idendique à l’emplacement original
+- Sélectionnez le client et l’emplacement de restauration, peut-être différent ou identique à l’emplacement original
 
   ![image-20211108085031840](image-20211108085031840.png)
 
