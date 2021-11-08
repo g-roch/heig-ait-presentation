@@ -125,5 +125,96 @@ Il faut ajuster les configurations IPtables pour autoriser ces communications.
 
 ## Configuration
 
+### Ajouter un client
+
+- Se rendre sur `http://<ip du director>/clients` et télécharger le client correspondant à notre OS
+- Le reste de l’installation se fait automatiquement, un question vous est posé pour savoir si un backup Full doit être fait immédiatement.
+
+### Définir un horaire de backup
+
+- Dans l’interface web d’administration, `configuration` → ` Configure Bacula`![image-20211108082612797](image-20211108082612797.png)
+
+- Puis dans `Schedules` → `(+) Schedules`
+
+  ![image-20211108083449762](image-20211108083449762.png)
+
+- Définissez un nom et ajouter des horaires grâce au `(+)`se trouvant en bas de l’interface
+
+  ![image-20211108083609581](image-20211108083609581.png)
+
+- Un popup s’affiche nous permettant de configurer la fréquence
+
+  ![image-20211108083654906](image-20211108083654906.png)
+
+- Puis indiquez quel niveau de backup vous désirez à cette horaire (`Full`, `Incrémentat`, `Différentiel`)
+
+  ![image-20211108083756539](image-20211108083756539.png)
+
+### Création d’un job
+
+- Dans l’interface web d’administration, `configuration` → ` Configure Bacula`![image-20211108082612797](image-20211108082612797.png)
+
+- Puis dans `Jobs` → `Add a New Backup`![image-20211108082715871](image-20211108082715871.png)
+
+- Donnez un nom et une description
+
+  ![image-20211108082952530](image-20211108082952530.png)
+
+- Séléctionner le client à sauvegarder
+
+  ![image-20211108083039658](image-20211108083039658.png)
+
+- Sélectionnez ce que vous désirer sauvegarder
+
+  ![image-20211108083124504](image-20211108083124504.png)
+
+- Indiquer où vous désirez que le backup soit fait
+
+  ![image-20211108083210096](image-20211108083210096.png)
+
+- Indiquer la fréquence du backup
+
+  ![image-20211108083254530](image-20211108083254530.png)
+
 ## Utilisation
+
+### Éxectution manuelle d’un job
+
+- Dans l’interface web d’administration, `Jobs` → ` Defined Jobs`
+
+  ![image-20211108083913134](image-20211108083913134.png)
+
+- Sélectionnez le jobs à lancer
+
+  ![image-20211108084155644](image-20211108084155644.png)
+
+- Modifiez au besoin la configuration du jobs (pour cette execution seulement)
+
+  ![image-20211108084245083](image-20211108084245083.png)
+
+- Lors du click sur `Run Job` un fenêtre s’affiche permettant de voir l’avancement du backup
+
+  ![image-20211108084516820](image-20211108084516820.png)
+
+### Réstauration d’un fichier
+
+- Dans l’interface web d’administration, `Jobs` → ` Web Restore`
+
+  ![image-20211108084541972](image-20211108084541972.png)
+
+- Sélectionnez le client sur lequel était le fichier original
+
+  ![image-20211108084649327](image-20211108084649327.png)
+
+- Sélectionnez la sauvegarde à utiliser pour la restauration
+
+  ![image-20211108084736662](image-20211108084736662.png)
+
+- Déplacez les fichiers/dossiers à restorer, dans la  `Restore Selections Area` (Dans la capture ci-dessous, seul le dossier `/etc` est selectionnez)
+
+  ![image-20211108084844380](image-20211108084844380.png)
+
+- Sélectionnez le client et l’emplacement de restauration, peut être différent ou idendique à l’emplacement original
+
+  ![image-20211108085031840](image-20211108085031840.png)
 
